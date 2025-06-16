@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Dogwarts – Descubra a casa do seu cão!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+<header>
+    <img src="images/logo.png" alt="Logo Dog Vader" id="logo">
+    <h1>Bem‑vindo(a) à Dogwarts</h1>
+    <p class="tagline">“Onde a magia encontra o latido.”</p>
+</header>
+
+<main>
+<section id="quiz">
+    <h2>Em qual casa seu cão será selecionado?</h2>
+    <form id="quizForm">
+        <div class="question">
+            <p>1. Quando alguém chega em casa, seu cão…</p>
+            <label><input type="radio" name="q1" value="Latifinória" required> Late e corre para proteger todos.</label>
+            <label><input type="radio" name="q1" value="Sonobrinna"> Observa primeiro antes de agir.</label>
+            <label><input type="radio" name="q1" value="Rolofraw"> Cheira curioso e quer brincar.</label>
+            <label><input type="radio" name="q1" value="Lambelufa"> Abana o rabo e oferece carinho imediato.</label>
+        </div>
+
+        <div class="question">
+            <p>2. No parque, seu cão prefere…</p>
+            <label><input type="radio" name="q2" value="Rolofraw" required> Explorar cada canto em busca de novidades.</label>
+            <label><input type="radio" name="q2" value="Sonobrinna"> Planejar rotas de volta antes de correr.</label>
+            <label><input type="radio" name="q2" value="Latifinória"> Correr atrás da bolinha sem medo.</label>
+            <label><input type="radio" name="q2" value="Lambelufa"> Sentar ao seu lado curtindo o momento.</label>
+        </div>
+
+        <div class="question">
+            <p>3. Como seu cão reage a novos truques?</p>
+            <label><input type="radio" name="q3" value="Sonobrinna" required> Aprende rápido, parece planejar cada passo.</label>
+            <label><input type="radio" name="q3" value="Rolofraw"> Fica animado com a novidade.</label>
+            <label><input type="radio" name="q3" value="Latifinória"> Executa com energia, mesmo sem perfeição.</label>
+            <label><input type="radio" name="q3" value="Lambelufa"> Quer agradar, mesmo que demore a aprender.</label>
+        </div>
+
+        <div class="question">
+            <p>4. Dia de chuva, seu cão…</p>
+            <label><input type="radio" name="q4" value="Lambelufa" required> Se enrosca com você sob a coberta.</label>
+            <label><input type="radio" name="q4" value="Rolofraw"> Olha a chuva pela janela, curioso.</label>
+            <label><input type="radio" name="q4" value="Sonobrinna"> Espera passar para sair cuidadosamente.</label>
+            <label><input type="radio" name="q4" value="Latifinória"> Quer brincar nas poças sem medo.</label>
+        </div>
+
+        <div class="question">
+            <p>5. Escolha um brinquedo favorito do seu cão:</p>
+            <label><input type="radio" name="q5" value="Sonobrinna" required> Quebra‑cabeça recheável.</label>
+            <label><input type="radio" name="q5" value="Latifinória"> Bola indestrutível.</label>
+            <label><input type="radio" name="q5" value="Rolofraw"> Corda colorida.</label>
+            <label><input type="radio" name="q5" value="Lambelufa"> Pelúcia macia.</label>
+        </div>
+
+        <button type="submit" class="magic-btn">Descobrir minha casa!</button>
+    </form>
+</section>
+
+<section id="result" class="hidden">
+    <h2>Parabéns! Seu cão foi selecionado para…</h2>
+    <img id="crestImage" src="" alt="Brasão da casa" />
+    <p id="houseDescription"></p>
+
+    <div class="share-buttons">
+        <button id="shareWhats">Compartilhar no WhatsApp</button>
+        <button id="shareInsta">Compartilhar no Instagram</button>
+    </div>
+
+    <button id="restart" class="magic-btn">Fazer o quiz novamente</button>
+</section>
+</main>
+
+<footer>
+    <p>Feito com feitiços caninos pela Dog Vader • © 2025</p>
+</footer>
+
+<audio id="bgAudio" src="https://cdn.pixabay.com/audio/2023/03/10/audio_a6b79d3b43.mp3" loop></audio>
+<button id="audioToggle" class="audio-btn">🔊</button>
+
+</body>
+</html>

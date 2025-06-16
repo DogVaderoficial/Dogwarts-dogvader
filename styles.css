@@ -1,0 +1,141 @@
+
+:root{
+    --bg1:#0d0d0d;
+    --bg2:#1a1a1a;
+    --gold:#d4af37;
+    --accent:#804000;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+    font-family:'Cinzel',serif;
+    color:#f5f5f5;
+    background:radial-gradient(circle at 50% 0%,rgba(255,255,255,0.05),transparent 70%),var(--bg1);
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+header{
+    text-align:center;
+    padding:2rem 1rem 1rem;
+    position:relative;
+}
+
+#logo{
+    width:120px;
+    filter:drop-shadow(0 0 5px var(--gold));
+    margin-bottom:1rem;
+}
+
+h1{
+    font-size:2.5rem;
+    color:var(--gold);
+    text-shadow:0 0 8px var(--gold);
+}
+
+.tagline{
+    font-size:1rem;
+    margin-top:0.5rem;
+    font-style:italic;
+    color:#ccc;
+}
+
+main{
+    max-width:800px;
+    margin:0 auto;
+    padding:2rem 1rem 4rem;
+}
+
+.question{
+    margin-bottom:1.5rem;
+}
+
+.question p{
+    margin-bottom:0.5rem;
+    font-weight:700;
+}
+
+.question label{
+    display:block;
+    margin:0.3rem 0;
+    cursor:pointer;
+}
+
+input[type=radio]{
+    margin-right:0.5rem;
+    accent-color:var(--gold);
+}
+
+.magic-btn{
+    display:block;
+    margin:2rem auto;
+    padding:0.8rem 2rem;
+    font-size:1rem;
+    border:2px solid var(--gold);
+    background:transparent;
+    color:var(--gold);
+    border-radius:4px;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+
+.magic-btn:hover{
+    background:var(--gold);
+    color:#0d0d0d;
+    box-shadow:0 0 10px var(--gold);
+}
+
+.hidden{
+    display:none;
+}
+
+#result{
+    text-align:center;
+}
+
+#crestImage{
+    width:200px;
+    margin:1rem 0;
+    filter:drop-shadow(0 0 10px var(--gold));
+}
+
+.share-buttons{
+    margin:1rem 0 2rem;
+}
+
+.share-buttons button{
+    margin:0 0.5rem;
+    padding:0.6rem 1rem;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    background:var(--gold);
+    color:#0d0d0d;
+    font-weight:700;
+    transition:box-shadow 0.3s ease;
+}
+
+.share-buttons button:hover{
+    box-shadow:0 0 8px var(--gold);
+}
+
+footer{
+    text-align:center;
+    padding:1rem;
+    background:var(--bg2);
+    font-size:0.9rem;
+    color:#aaa;
+}
+
+.audio-btn{
+    position:fixed;
+    bottom:1rem;
+    right:1rem;
+    border:none;
+    font-size:1.5rem;
+    background:transparent;
+    color:var(--gold);
+    cursor:pointer;
+    filter:drop-shadow(0 0 5px var(--gold));
+}
